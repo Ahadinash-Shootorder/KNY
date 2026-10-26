@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply text-stone-900 bg-white selection:bg-lime-400 selection:text-stone-900 overflow-x-hidden;
+    font-family: var(--font-inter), sans-serif;
+  }
+}
+
+/* Custom utility classes */
+.font-crimson {
+  font-family: var(--font-crimson-pro), serif;
+}
+
+.font-ibm-plex {
+  font-family: var(--font-ibm-plex-sans), sans-serif;
+}
+
+.font-playfair {
+  font-family: var(--font-playfair-display), serif;
+}
